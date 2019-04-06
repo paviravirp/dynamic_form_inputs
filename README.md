@@ -26,7 +26,7 @@ configuration =
 <DynamicComponent toBeReplaced={regex|string} input={string} configuration={object}
 
 //Sample Component
-<DynamicComponent toBeReplaced='/\[(.*?)\]/g' input='The user [FirstName] provided the comment [Comment]' configuration = {configuration from config file} />
+<DynamicComponent toBeReplaced='/\[(.*?)\]/g' input='The user [FirstName] provided the comment [Comment]' configuration = {configuration from config file} values={'firstName': 'sample name', 'comment': 'entered comments'} />
 
 
 //Gets translated to =>
