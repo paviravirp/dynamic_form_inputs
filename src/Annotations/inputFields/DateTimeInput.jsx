@@ -12,7 +12,7 @@ export default DateTimeInput = (props) => {
     onChange: props.onChange,
     onBlur: props.onBlur,
     onFocus: props.onFocus
-}
+  }
 
   return (
       <DatePicker
@@ -24,4 +24,3 @@ export default DateTimeInput = (props) => {
       />
   );
 }
-

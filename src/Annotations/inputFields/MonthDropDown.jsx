@@ -1,17 +1,12 @@
 import React from 'react';
 import Select from 'react-select';
+import { times } from 'lodash';
 
 export default MonthDropDown = (props) => {
     const { configuration, defaultValue } = props;
-    const constructOptions = () => {
-        return Array.from(Array(12), (value, index) => {
-            return { 'label': index, 'value': index }
-        });
-    }
+    const constructOptions = () => _.times(12, (value) => ({'label': ++value, 'value': value}));
 
-    onChange = (event) => {
-        props.onChange(event.value);
-    }
+    onChange = (event) => props.onChange(event.value);
 
     const specificProps = { placeholder: configuration.placeholder }
 
