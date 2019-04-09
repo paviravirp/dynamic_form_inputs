@@ -1,4 +1,5 @@
-# dynamic_form_inputs
+# Dynamic Form Inputs
+## A simple library to create dynamic forms driven by a simple config file using React.
 
 ## sample config file
 ```
